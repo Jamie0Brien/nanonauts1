@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<p>
+<img id="display-image" onclick="swapImage()" src="sam.png" width="180"
+height="180"/>
+</p>
+<p>Click the image to change it!</p>
+<script>
+function swapImage() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("sam.png")) {
+imageDisplayed.src = "daniel.png";
+}
+else {
+imageDisplayed.src = "sam.png";
+}
+}
+</script>
+</body>
+</html>
